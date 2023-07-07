@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page with tailwind</title>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    
+</head>
+<body class="">
+
+    <nav class="">
+        <div class="flex items-center justify-between m-7 xl:ml-52 xl:mr-52">
+            <img class="h-auto w-auto" src="/dist/img/logo.svg" alt="">
+            <div class=" items-center hidden md:flex">
+                <ul class="flex space-x-3 font-sans text-lg">
+                    <li>Pricing</li>
+                    <li>Product</li>
+                    <li>About Us</li>
+                    <li>Carrers</li>
+                    <li>Community</li>
+
+                </ul>
+            </div>
+            <!-- get Started buttton -->
+            <div class="self-end font-sans text-lg hidden md:block">
+                <button class="common-bg-orange">Get Started</button>
+            </div>
+            <div onclick="hamburger()" class="self-end font-sans text-lg md:hidden transform hover:scale-110 duration-700">
+                <img id="menuImg" src="/dist/img/icon-hamburger.svg" alt="">
+            </div>
+
+            
+        </div>
+    </nav>
+
+    <!-- hamburger menu  -->
+    <div id="hamburger" class="fixed w-full hidden z-10">
+        <div class="max-w-sm mx-auto shadow-md bg-white text-center p-10">
+            <ul class=" font-sans text-lg font-semibold">
+                <li>Pricing</li>
+                <li>Product</li>
+                <li>About Us</li>
+                <li>Carrers</li>
+                <li>Community</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- hero section  -->
+    <section id="hero" class="mt-16 m-10 xl:ml-52 xl:mr-52">
+        <div class=" space-y-5 md:flex md:items-center md:row-span-2 md:justify-center md:space-x-5 flex-row-reverse">
+            <!-- second div  -->
+            <div class="w-[100%]" >
+                <img class="h-80 lg:h-[30rem] block m-auto justify-center" src="/dist/img/illustration-intro.svg" alt="">
+            </div>
+
+            <!-- first div  -->
+            <div class="max-w-sm mx-auto block h-auto space-y-5 md:w-[80%]">
+                <div>
+                    <h1 class="text-black text-5xl font-semibold">Bring everyone together to build better products</h1>
+                </div>
+                <div class="">
+                    <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                </div>
+                <div class="">
+                    <button class="common-bg-orange">Get Started</button>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+
+    <section class="mt-32 m-10 xl:ml-52 xl:mr-52">
+        <div class="space-y-7 md:flex md:space-x-5">
+            <div class="space-y-5">
+                <div class="text-4xl font-bold">
+                    <h1>What's different about Manage?</h1>
+                </div>
+                <div>
+                    <p>
+                        Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+                    </p>
+                </div>
+            </div>
+
+            <!-- all cards  -->
+            <div class="items-center">
+                <!-- single one -->
+                <div class="">
+                    <!-- no. and heading -->
+                    <div class="flex space-x-5 mb-5">
+                        <div>
+                            <span class="common-bg-orange">01</span>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold">Track company-wide progress</h1>
+                            <!-- description div  -->
+                            <div class="mt-4">
+                                <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- single one -->
+                <div class="">
+                    <!-- no. and heading -->
+                    <div class="flex space-x-5 mb-5">
+                        <div>
+                            <span class="common-bg-orange">02</span>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold">Advanced built-in reports</h1>
+                            <!-- description div  -->
+                            <div class="mt-4">
+                                <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- single one -->
+                <div class="">
+                    <!-- no. and heading -->
+                    <div class="flex space-x-5 mb-5">
+                        <div>
+                            <span class="common-bg-orange">03</span>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold">Everything you need in one place</h1>
+                            <!-- description div  -->
+                            <div class="mt-4">
+                                <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-32 m-10 lg:m-24 xl:ml-52 xl:mr-52">
+        <div class="space-y-20"> 
+            <!-- heading div -->
+            <div class="text-center">
+                <h1 class="font-bold text-4xl">What's Different About Manage?</h1>
+            </div>
+
+            <!--all cards div  -->
+            <div class="max-w-lg mx-auto h-auto lg:max-w-5xl lg:flex items-center justify-center space-y-5 lg:space-x-3">
+                <!-- single card div  -->
+                <div class="avatar-card ">
+                    <!-- avatar image -->
+                    <div>
+                        <img class="avatar-img" src="/dist/img/avatar-anisha.png" alt="">
+                    </div>
+                    <!-- avatar name -->
+                    <div class="text-center">
+                        <h1  class="font-bold text-lg">Anisha Li</h1>
+                    </div>
+                    <!-- avatar description -->
+                    <div>
+                        <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                    </div>
+                </div>
+
+                <!-- single card div  -->
+                <div class="avatar-card">
+                    <!-- avatar image -->
+                    <div>
+                        <img class="avatar-img" src="/dist/img/avatar-ali.png" alt="">
+                    </div>
+                    <!-- avatar name -->
+                    <div class="text-center">
+                        <h1 class="font-bold text-lg">Ali Bravo</h1>
+                    </div>
+                    <!-- avatar description -->
+                    <div>
+                        <p>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+                    </div>
+                </div>
+
+                <!-- single card div  -->
+                <div class="avatar-card">
+                    <!-- avatar image -->
+                    <div>
+                        <img class="avatar-img" src="/dist/img/avatar-richard.png" alt="">
+                    </div>
+                    <!-- avatar name -->
+                    <div class="text-center">
+                        <h1 class="font-bold text-lg">Richard Watts</h1>
+                    </div>
+                    <!-- avatar description -->
+                    <div>
+                        <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button div  -->
+            <div class="flex items-center justify-center">
+                <button class="common-bg-orange">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-32 bg-orange-600 m-0 pt-10 pb-10" id="cta" >
+        <div class="flex m-5 xl:ml-52 xl:mr-52">
+            <!-- heading div  -->
+            <div class="w-[100%]">
+                <h1 class="text-4xl text-white font-bold">Simplify how your team works today</h1>
+            </div>
+            
+            <!-- butoon div  -->
+            <div class="flex w-full justify-end pr-10">
+                <div>
+                    <button class="common-bg-orange text-orange-600 bg-white ring-white ring-offset-orange-600">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 \">
+        <div class="max-w-sm mx-auto  p-16 space-y-5 md:max-w-full md:flex md:justify-between xl:ml-40 xl:mr-40">
+            <div class="space-y-10">
+                <!-- logo image div  -->
+                <div>
+                    <img src="/dist/img/logo-white.svg" alt="">
+                </div>
+
+                <!-- social media icons -->
+                <div class="flex space-x-3">
+                    <!-- facebook icon  -->
+                    <a href="#">
+                        <img src="/dist/img/icon-facebook.svg" alt="">
+                    </a href="#">
+
+                    <!-- youtube icon  -->
+                    <a href="#">
+                        <img src="/dist/img/icon-youtube.svg" alt="">
+                    </a href="#">
+
+                    <!-- twitter icon  -->
+                    <a href="#">
+                        <img src="/dist/img/icon-twitter.svg" alt="">
+                    </a href="#">
+
+                    <!-- pinterest icon  -->
+                    <a href="#">
+                        <img src="/dist/img/icon-pinterest.svg" alt="">
+                    </a href="#">
+
+                    <!-- instagram icon  -->
+                    <a href="#">
+                        <img src="/dist/img/icon-instagram.svg" alt="">
+                    </a href="#">
+                </div>
+            </div>
+
+            <!-- menu lists div  -->
+            <div class="flex space-x-4 text-lg text-white">
+                <!-- first list  -->
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Pricing</li>
+                        <li>Product</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+
+                <!-- second list  -->
+                <div>
+                    <ul>
+                        <li>Carrers</li>
+                        <li>Community</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Updated inbox and copy-right text  -->
+            <div class="relative">
+                <!-- from div  -->
+                <div>
+                    <form action="" class="flex space-x-4">
+                        <div>
+                            <input type="text" class="p-2 pl-5 pr-5 rounded-3xl" placeholder="Updated in your inbox">
+                        </div>
+    
+                        <!-- submit button  -->
+                        <div>
+                            <button class="common-bg-orange ring-offset-gray-900" type="submit">Go</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- copy-right text  -->
+                <div class="mt-5 md:mt-0 md:absolute md:bottom-0">
+                    <p>Copyright © 2022, All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuImg = document.getElementById("menuImg")
+        var menuBar = document.getElementById("hamburger")
+        function hamburger(){
+
+            if(menuBar.classList.contains("hidden")){
+                menuBar.classList.remove("hidden")
+                menuImg.src = "/dist/img/icon-close.svg"
+            } else{
+                menuBar.classList.add("hidden")
+                menuImg.src = "/dist/img/icon-hamburger.svg"
+            }
+        }
+
+    </script>
+</body>
+</html>
