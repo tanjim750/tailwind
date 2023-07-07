@@ -606,7 +606,7 @@ body {
 }
 
 #cta{
-  background-image: url('./img/bg-simplify-section-desktop.svg');
+  background-image: url('https://raw.githubusercontent.com/tanjim750/tailwind/71fc5754177f53186b066b885830868bddb05ac0/dist/img/bg-simplify-section-desktop.svg');
   background-repeat: no-repeat;
 }
 
