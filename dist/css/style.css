@@ -599,7 +599,7 @@ p {
 }
 
 body {
-  background-image: url('./img/bg-tablet-pattern.svg');
+  background-image: url('https://raw.githubusercontent.com/tanjim750/tailwind/0e65277e6553aa3abf22858a27da774591a866c1/dist/img/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-size: 800px;
   background-position: 90% -25%;
