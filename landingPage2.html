@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="shortcut icon" href="/dist/img/tanjim.png">
+        <!-- CSS dependencies -->
+        <link rel="stylesheet" href="/dist/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+<body class="">
+
+    <main class="bg-dark-gray p-5 md:p-20 md:pt-12 xl:px-72">
+        <nav class="bg-dark-gray">
+            <div class="flex justify-between items-center">
+                <!-- logo image -->
+                <div>
+                    <img src="/dist/img/megapack-logo-white.png" alt="">
+                </div>
+    
+                <!-- menu  -->
+                <div class="hidden md:block">
+                    <ul class="flex space-x-10 text-sm text-white font-semibold uppercase">
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Dropdown</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- social media icons -->
+                <div class="space-x-3 hidden md:block">
+                    <a href="#">
+                        <i class="fa fa-facebook text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                    </a>
+    
+                    <a href="#" class="">
+                        <i class="fa fa-twitter text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                    </a>
+    
+                    <a href="#" class="">
+                        <i class="fa fa-instagram text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                    </a>
+                </div>
+
+                <!-- hamburger menu btn  -->
+                <div class="md:hidden hamburger" onclick="hamburger()">
+                    <i id="menuIcon" class="fa fa-bars" style="font-size: 35px;"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hamburger menu card  -->
+        <div class="fixed w-full hidden md:hidden" id="menuCard">
+            <div class="max-w-lg mx-auto justify-center bg-black-gary/90 shadow-md">
+                <ul class="text-sm text-white font-semibold uppercase space-y-4 text-center p-20">
+                    <li>Features</li>
+                    <li>Dropdown</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="lg:flex flex-row-reverse items-center justify-between">
+            <!-- imgae  -->
+            <div>
+                <img class="block m-auto justify-center w-72 mt-16 sm:w-96 lg:w-auto" src="/dist/img/services-intro-image.png" alt="">
+            </div>
+            <div class="space-y-10">
+                <div class="lg:mt-48 m-0 space-y-3">
+                    <h1 class="from-neutral-100 text-4xl text-white">No Magic!</h1>
+                    <h1 class="from-neutral-100 text-4xl text-white">It's just <span class="font-bold">Tailwind</span></h1>
+                </div>
+                <div class="">
+                    <span class="bg-black-gary p-1.5 text-white uppercase font-semibold rounded-sm">Tailwind Page Builder</span>
+                </div>
+
+                <div>
+                    <p class="text-gray-400 text-lg">From logo design to website designers and developers are ready to complete jobs to save your money and time.</p>
+                </div>
+                <div>
+                    <button class="btn btn-orange">Get your access</button>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- demo services  -->
+        <div class="lg:flex items-center justify-between mt-32 space-y-20 lg:space-y-0 ">
+            <!-- single service  -->
+            <div class="flex space-x-2">
+                <div>
+                    <img class="w-16" src="/dist/img/compass.png" alt="">
+                </div>
+                <div class="space-y-1">
+                    <div>
+                        <h1 class="font-mono text-xl text-white">Access to source code</h1>
+                    </div>
+                    <div>
+                        <p class="text-gray-500">Create powerful tailwind landing pages with megapack.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- single service  -->
+            <div class="flex space-x-2">
+                <div>
+                    <img class="w-14" src="/dist/img/tailwind-icon.png" alt="">
+                </div>
+                <div class="space-y-1">
+                    <div>
+                        <h1 class="font-mono text-xl text-white">Tailwind framework</h1>
+                    </div>
+                    <div>
+                        <p class="text-gray-500">Create powerful tailwind landing pages with megapack.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- single service  -->
+            <div class="flex space-x-3">
+                <div>
+                    <img class="w-12" src="/dist/img/pie-chart.png" alt="">
+                </div>
+                <div class="space-y-1">
+                    <div>
+                        <h1 class="font-mono text-xl text-white">Sales charts</h1>
+                    </div>
+                    <div>
+                        <p class="text-gray-500">Create powerful tailwind landing pages with megapack.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- website services  -->
+    <div class="pt-32 p-5 md:p-20 md:pt-12 xl:px-72 bg-gray-100 space-y-16">
+        <!-- top text  -->
+        <div class="space-y-4">
+            <h1 class="text-4xl font-sans text-[#424447]">Build your website in minutes!</h1>
+            <p class="text-lg text-gray-400">From logo design to website designers and developers are ready to complete jobs to save your money and time.</p>
+        </div>
+
+        <!-- cards -->
+        <div class=" md:flex flex-wrap">
+            <!-- single card  -->
+            <div class="service-card border-blue-600">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Build Everything</h1>
+                <span class="service-card-span">PAGE BUILDER</span>
+                <p class="text-gray-400 text-lg">Our experience with megapack was just awesome! pixfort team help us a lot and answered all our questions.</p>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-green-400">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Pure Tailwind</h1>
+                <span class="service-card-span">PREMIUM QUALITY</span>
+                <p class="text-gray-400 text-lg">Our experience with megapack was just awesome! pixfort team help us a lot and answered all our questions.</p>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-orange-500 ">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Lifetime Upgrades</h1>
+                <span class="service-card-span">FREE UPDATES</span>
+                <p class="text-gray-400 text-lg">Our experience with megapack was just awesome! pixfort team help us a lot and answered all our questions.</p>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-blue-600">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Build Everything</h1>
+                <span class="service-card-span">PAGE BUILDER</span>
+                <p class="text-gray-400 text-lg">Our experience with megapack was just awesome! pixfort team help us a lot and answered all our questions.</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- clients review  -->
+    <div class="pt-32 p-5 md:p-20 md:pt-12 xl:px-72 bg-white space-y-16">
+        <!-- top text  -->
+        <div class="space-y-4">
+            <h1 class="text-4xl font-sans text-[#424447]">Let the numbers talk!</h1>
+            <p class="text-lg text-gray-400">From logo design to website designers and developers are ready to complete jobs to save your money and time.</p>
+        </div>
+
+        <!-- happy clients  -->
+        <div class="space-y-20 lg:space-y-0 lg:space-x-32 lg:flex">
+            <!-- single -->
+            <div class="space-y-5" >
+                <!-- icon  -->
+                <div>
+                    <i class="fa fa-heart-o text-gray-500/80" style="font-size: 45px;"></i>
+                </div>
+
+                <!-- description -->
+                <div>
+                    <p class="text-5xl text-gray-500/80">+10,000</p>
+                </div>
+                <div>
+                    <span class="service-card-span">Happy customers</span>
+                </div>
+                
+            </div>
+
+            <!-- single -->
+            <div class="space-y-5" >
+                <!-- icon  -->
+                <div>
+                    <i class="fa fa-download text-gray-500/80" style="font-size: 45px;"></i>
+                </div>
+
+                <!-- description -->
+                <div>
+                    <p class="text-5xl text-gray-500/80">+24,500</p>
+                </div>
+                <div>
+                    <span class="service-card-span">DOWNLOADS SINCE 2012</span>
+                </div>
+                
+            </div>
+
+            <!-- single -->
+            <div class="space-y-5 " >
+                <!-- icon  -->
+                <div>
+                    <i class="fa fa-envelope-open text-gray-500/80" style="font-size: 45px;"></i>
+                </div>
+
+                <!-- description -->
+                <div>
+                    <p class="text-5xl text-gray-500/80">+32,000</p>
+                </div>
+                <div>
+                    <span class="service-card-span">SUPPORT TICKETS SOLVED</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- image  -->
+        <div>
+            <img class="w-full lg:w-[80%]" src="/dist/img/services-image-hero.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- watch tutorials  -->
+    <div class="pt-32 p-5 md:p-20 md:pt-12 xl:px-72 bg-gray-100 space-y-16 ">
+        <!-- top text  -->
+        <div class="space-y-4">
+            <h1 class="text-4xl font-sans text-[#424447]">Build your website in minutes!</h1>
+            <p class="text-lg text-gray-400">From logo design to website designers and developers are ready to complete jobs to save your money and time.</p>
+        </div>
+
+        <div class="space-y-7 lg:flex lg:space-y-0">
+            <!-- card -->
+            <div class="service-card w-full lg:max-w-[30rem] mt-0 border-green-400">
+                <i class="fa fa-youtube-play text-red-500/80" style="font-size: 55px;"></i>
+                <h1 class="text-2xl font-bold text-[#4a4b4c] uppercase" style="margin-bottom: 10px;">Simple & easy</h1>
+                <span class="service-card-span">NO CODING REQUIRED</span>
+                <p class="text-gray-400 text-lg">Our experience with megapack was just awesome! pixfort team help us a lot!</p>
+                <button class="btn btn-orange">Purchase</button>
+            </div>
+            
+            <!-- video frame  -->
+            <div>
+                <iframe class="w-full aspect-video" height="350" src="https://www.youtube.com/embed/CLkxRnRQtDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- pricing  -->
+     <div class="pt-32 p-5 md:p-20 md:pt-12 xl:px-72 bg-black-gary space-y-16">
+        <!-- top text  -->
+        <div class="space-y-4">
+            <h1 class="text-4xl font-sans text-white">Start with affordable prices.</h1>
+            <p class="text-lg text-gray-400">From logo design to website designers and developers are ready to complete jobs to save your money and time.</p>
+        </div>
+
+        <!-- cards -->
+        <div class=" md:flex flex-wrap">
+            <!-- single card  -->
+            <div class="service-card border-green-400 text-center">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Personal</h1>
+                <p class="text-lg uppercase font-bold text-gray-400  pb-5">FOR STARTERS</p>
+                <span class="service-card-span text-xl">$9,99/mo</span>
+                <p class="text-gray-400 text-lg">1 Landing Page</p>
+                <p class="text-gray-400 text-lg">5,000 Page views</p>
+                <p class="text-gray-400 text-lg">Free Domain</p>
+                <p class="text-gray-400 text-lg">--</p>
+                <div>
+                    <button class="btn btn-gray">get Started</button>
+                </div>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-orange-400 text-center">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Startup</h1>
+                <p class="text-lg uppercase font-bold text-orange-400 pb-5">MOST POPULAR</p>
+                <span class="service-card-span text-xl">$29,99/mo</span>
+                <p class="text-gray-400 text-lg">1 Landing Page</p>
+                <p class="text-gray-400 text-lg">5,000 Page views</p>
+                <p class="text-gray-400 text-lg">Free Domain</p>
+                <p class="text-gray-400 text-lg">--</p>
+                <div>
+                    <button class="btn btn-orange">get Started</button>
+                </div>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-gray-400 text-center">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Business</h1>
+                <p class="text-lg uppercase font-bold text-orange-400 pb-5">FOR COMPANIES</p>
+                <span class="service-card-span text-xl">$59,99/mo</span>
+                <p class="text-gray-400 text-lg">100 Landing Pages</p>
+                <p class="text-gray-400 text-lg">200,000 Page views</p>
+                <p class="text-gray-400 text-lg">Free Domain</p>
+                <p class="text-gray-400 text-lg">--</p>
+                <div>
+                    <button class="btn btn-orange">get Started</button>
+                </div>
+            </div>
+
+            <!-- single card  -->
+            <div class="service-card border-green-400 text-center">
+                <h1 class="text-2xl font-bold text-[#4a4b4c] mb-3">Personal</h1>
+                <p class="text-lg uppercase font-bold text-gray-400  pb-5">FOR STARTERS</p>
+                <span class="service-card-span text-xl">$9,99/mo</span>
+                <p class="text-gray-400 text-lg">1 Landing Page</p>
+                <p class="text-gray-400 text-lg">5,000 Page views</p>
+                <p class="text-gray-400 text-lg">Free Domain</p>
+                <p class="text-gray-400 text-lg">--</p>
+                <div>
+                    <button class="btn btn-gray">get Started</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="bg-dark-gray p-5 md:p-20 md:pt-12 xl:px-72 space-y-16">
+        <!-- images  -->
+        <div class="flex items-center justify-between">
+            <!-- logo  -->
+            <div>
+                <img src="/dist/img/megapack-logo-white.png" alt="">
+            </div>
+
+            <!-- trusted  -->
+            <div class="flex space-x-4">
+                <!-- visa -->
+                <div>
+                    <i class="fa fa-cc-visa text-gray-300 hover:text-gray-300/80" style="font-size: 30px;"></i>
+                </div>
+
+                <!-- mastercard -->
+                <div>
+                    <i class="fa fa-cc-mastercard text-gray-300 hover:text-gray-300/80" style="font-size: 30px;"></i>
+                </div>
+
+                <!-- amazon -->
+                <div>
+                    <i class="fa fa-amazon text-gray-300 hover:text-gray-300/80" style="font-size: 30px;"></i>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- services  -->
+        <div class="space-y-12 lg:space-y-0 lg:flex lg:items-center lg:justify-between ">
+            <!-- mission -->
+            <div class="lg:max-w-md">
+                <h1 class="font-bold text-2xl text-white mb-3">Our Mission</h1>
+                <p class="text-lg text-gray-400">The new online PixFort Page Builder represents the next generation of HTML website creation tools.</p>
+            </div>
+
+            <!-- product -->
+            <div>
+                <h1 class="font-bold text-2xl text-white mb-3">Product</h1>
+                <p class="font-semibold text-lg text-gray-400">Company</p>
+                <p class="font-semibold text-lg text-gray-400">Team</p>
+                <p class="font-semibold text-lg text-gray-400">We are Hiring!</p>
+            </div>
+
+            <!-- about -->
+            <div>
+                <h1 class="font-bold text-2xl text-white mb-3">About us</h1>
+                <p class="font-semibold text-lg text-gray-400">Purchase MEGAPACK</p>
+                <p class="font-semibold text-lg text-gray-400">Help Center</p>
+                <p class="font-semibold text-lg text-gray-400">Terms of use</p>
+            </div>
+
+            <!-- contact  -->
+            <div>
+                <!-- card -->
+                <div class="service-card w-full lg:max-w-[30rem] mt-0 border-orange-500">
+                    <h1 class="text-2xl font-bold text-[#4a4b4c] " style="margin-bottom: 10px;">Contact Us</h1>
+                    <p class="text-gray-400 text-lg">16 Rue Saint Paul, Paris</p>
+                    <p class="text-gray-400 text-lg">+33 4 35 62 48</p>
+                    <button class="btn btn-orange">Contact</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- copy-right  -->
+        <div class="flex items-center justify-between">
+            <div>
+                <p class="text-lg text-gray-400">Copyright © 2023 <span class="font-bold">TanjimAbubokor</span> All Rights Reserved</p>
+            </div>
+
+            <!-- menu -->
+            <div>
+                <ul class="flex space-x-5 text-lg font-semibold text-gray-400">
+                    <li>About</li>
+                    <li>features</li>
+                    <li>Services</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuIcon = document.getElementById("menuIcon")
+        var menuCard = document.getElementById("menuCard")
+
+        function hamburger(){
+            if(menuIcon.classList.contains("fa-bars")){
+                menuCard.classList.remove("hidden")
+                menuIcon.classList.remove("fa-bars")
+                menuIcon.classList.add("fa-close")
+            } else{
+                menuCard.classList.add("hidden")
+                menuIcon.classList.remove("fa-close")
+                menuIcon.classList.add("fa-bars")
+            }
+        }
+    </script>
+</body>
+</html>
