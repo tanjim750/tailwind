@@ -11,63 +11,64 @@
     </head>
 <body class="">
 
-    <main class="bg-dark-gray p-5 md:p-20 md:pt-12 xl:px-72">
-        <nav class="bg-dark-gray">
-            <div class="flex justify-between items-center">
-                <!-- logo image -->
-                <div>
-                    <img src="./dist/img/megapack-logo-white.png" alt="">
-                </div>
-    
-                <!-- menu  -->
-                <div class="hidden md:block">
-                    <ul class="flex space-x-10 text-sm text-white font-semibold uppercase">
-                        <li>
-                            <a href="#">Features</a>
-                        </li>
-                        <li>
-                            <a href="#">Dropdown</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- social media icons -->
-                <div class="space-x-3 hidden md:block">
-                    <a href="#">
-                        <i class="fa fa-facebook text-white" aria-hidden="true" style="font-size: 25px;"></i>
-                    </a>
-    
-                    <a href="#" class="">
-                        <i class="fa fa-twitter text-white" aria-hidden="true" style="font-size: 25px;"></i>
-                    </a>
-    
-                    <a href="#" class="">
-                        <i class="fa fa-instagram text-white" aria-hidden="true" style="font-size: 25px;"></i>
-                    </a>
-                </div>
-
-                <!-- hamburger menu btn  -->
-                <div class="md:hidden hamburger" onclick="hamburger()">
-                    <i id="menuIcon" class="fa fa-bars" style="font-size: 35px;"></i>
-                </div>
+    <nav class="bg-dark-gray p-5 md:p-20 md:pt-12 xl:px-72 fixed w-full">
+        <div class="flex justify-between items-center relative">
+            <!-- logo image -->
+            <div>
+                <img src="./dist/img/megapack-logo-white.png" alt="">
             </div>
-        </nav>
 
-        <!-- hamburger menu card  -->
-        <div class="fixed w-full hidden md:hidden" id="menuCard">
-            <div class="max-w-lg mx-auto justify-center bg-black-gary/90 shadow-md">
-                <ul class="text-sm text-white font-semibold uppercase space-y-4 text-center p-20">
-                    <li>Features</li>
-                    <li>Dropdown</li>
-                    <li>Contact</li>
+            <!-- menu  -->
+            <div class="hidden md:block">
+                <ul class="flex space-x-10 text-sm text-white font-semibold uppercase">
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Dropdown</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </div>
-        
 
+            <!-- social media icons -->
+            <div class="space-x-3 hidden md:block">
+                <a href="#">
+                    <i class="fa fa-facebook text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                </a>
+
+                <a href="#" class="">
+                    <i class="fa fa-twitter text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                </a>
+
+                <a href="#" class="">
+                    <i class="fa fa-instagram text-white" aria-hidden="true" style="font-size: 25px;"></i>
+                </a>
+            </div>
+
+            <!-- hamburger menu btn  -->
+            <div class="md:hidden hamburger z-10" onclick="hamburger()">
+                <i id="menuIcon" class="fa fa-bars" style="font-size: 35px;"></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hamburger menu card  -->
+    <div class="fixed w-full hidden md:hidden mt-20" id="menuCard">
+        <div class="max-w-lg mx-auto justify-center bg-black-gary/90 shadow-md">
+            <ul class="text-sm text-white font-semibold uppercase space-y-4 text-center p-20">
+                <li>Features</li>
+                <li>Dropdown</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="bg-dark-gray p-5 md:p-20 md:pt-12 xl:px-72">
         <div class="lg:flex flex-row-reverse items-center justify-between">
             <!-- imgae  -->
             <div>
